@@ -29,6 +29,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.container>*:hover {
+    cursor: pointer;
+}
+
 .company {
     font-size: 12px;
     font-weight: lighter;
@@ -84,9 +88,10 @@ address {
 }
 
 .box {
-    padding: 4px 8px;
-    font-size: 10px;
     color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
 }
 
 .bg-red {
@@ -112,13 +117,13 @@ address {
 .discount {
     color: red;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 5px;
 }
 
 .price {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 500;
     text-decoration: line-through;
 }
 
@@ -134,6 +139,7 @@ header {
     right: 0;
     left: 0;
     z-index: 1;
+    box-shadow: 0 0 10px gray;
 }
 
 .box-link,
