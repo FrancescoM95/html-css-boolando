@@ -15,6 +15,7 @@ body {
 img {
     max-width: 100%;
     display: block;
+    margin-bottom: 3px;
 }
 
 a {
@@ -25,6 +26,19 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+address {
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    color: #4d4d4d;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 /*# Utils */
@@ -59,6 +73,42 @@ a:hover {
     flex-basis: calc(100% / 3 - 10px);
 }
 
+.card {
+    position: relative;
+}
+
+.badges {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.discount {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.box {
+    padding: 4px 8px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: darkgreen;
+}
+
 /** header  */
 
 header {
@@ -69,6 +119,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .box-link,
