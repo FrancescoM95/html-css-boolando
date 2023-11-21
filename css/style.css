@@ -83,18 +83,6 @@ h2 {
     left: 0;
 }
 
-.discount {
-    color: red;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.price {
-    font-size: 14px;
-    font-weight: 100;
-    text-decoration: line-through;
-}
-
 .box {
     padding: 4px 8px;
     font-size: 10px;
@@ -108,6 +96,31 @@ h2 {
 .bg-green {
     background-color: darkgreen;
 }
+
+.prefe{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;   
+}
+
+.discount {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
 
 /** header  */
 
