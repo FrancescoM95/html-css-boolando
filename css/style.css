@@ -52,6 +52,11 @@ address {
     font-style: normal;
 }
 
+#logo {
+    height: 30px;
+    vertical-align: middle;
+}
+
 /*# Utils */
 
 .container {
@@ -132,8 +137,7 @@ address {
 
 header {
     background-color: #FF6900;
-    height: 70px;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -145,14 +149,21 @@ header {
 .box-link,
 .box-logo,
 .box-user {
-    height: 50px;
-    width: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-basis: calc(100%/3);
+    max-height: 50px;
     color: #fff;
 }
 
+.box-logo {
+    justify-content: center;
+}
+
+
 .box-user {
     justify-content: flex-end;
-    align-items: center;
 }
 
 /** main */
