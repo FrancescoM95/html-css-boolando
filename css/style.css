@@ -19,26 +19,33 @@ img {
 }
 
 a {
+    font-size: 14px;
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-address {
+.company {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: lighter;
     font-style: normal;
     color: #4d4d4d;
 }
 
 h2 {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
+    line-height: 16px;
+}
+
+address {
+    font-size: 16px;
+    font-style: normal;
 }
 
 /*# Utils */
@@ -53,13 +60,6 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-}
-
-
-.border {
-    border: 1px dashed red;
-    min-height: 50px;
-    min-width: 100px;
 }
 
 .row {
@@ -111,12 +111,13 @@ h2 {
 
 .discount {
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
+    margin-right: 5px;
 }
 
 .price {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
     text-decoration: line-through;
 }
@@ -143,6 +144,11 @@ header {
     color: #fff;
 }
 
+.box-user {
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /** main */
 
 .layout {
@@ -163,9 +169,37 @@ header {
 /** footer */
 
 footer {
-    height: 70px;
-    padding: 10px 0;
+    height: 100px;
+    font-size: 14px;
+    padding: 20px 0;
     margin-top: 50px;
+    color: #fff;
     background-color: #1A1A1A;
     border-bottom: 2px solid #fff;
+}
+
+.left-footer,
+.right-footer {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-footer {
+    align-items: flex-end;
+}
+
+.gap-10 {
+    display: flex;
+    gap: 10px;
+}
+
+.left-footer a {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.findus {
+    font-size: 12px;
 }
