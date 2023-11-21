@@ -1,0 +1,82 @@
+/*Todo CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*# Generics */
+
+body {
+    font-family: 'Whitney Semibold', sans-serif;
+    padding-top: 120px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+/*# Utils */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.border {
+    border: 1px dashed red;
+    min-height: 50px;
+    min-width: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.col {
+    flex-basis: calc(100% / 3 - 10px);
+}
+
+.card {
+     
+}
+
+
+/** header  */
+
+header {
+    background-color: #FF6900;
+    height: 70px;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.box-link,
+.box-logo,
+.box-user{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+}
+
+/** footer */
+
+footer{
+    height: 70px;
+    padding: 10px 0;
+    margin-top: 50px;
+    background-color: #1A1A1A;
+    border-bottom: 2px solid #fff;
+}
