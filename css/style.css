@@ -12,10 +12,21 @@ body {
     padding-top: 120px;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /*# Utils */
 
 .container {
@@ -26,6 +37,8 @@ img{
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -46,11 +59,6 @@ img{
     flex-basis: calc(100% / 3 - 10px);
 }
 
-.card {
-     
-}
-
-
 /** header  */
 
 header {
@@ -65,15 +73,15 @@ header {
 
 .box-link,
 .box-logo,
-.box-user{
+.box-user {
     height: 50px;
     width: 100px;
-    background-color: black;
+    color: #fff;
 }
 
 /** footer */
 
-footer{
+footer {
     height: 70px;
     padding: 10px 0;
     margin-top: 50px;
