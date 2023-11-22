@@ -18,6 +18,10 @@ img {
     margin-bottom: 3px;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     font-size: 14px;
     text-decoration: none;
@@ -74,12 +78,11 @@ address {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 10px;
 }
 
 .col {
-    flex-basis: calc(100% / 3 - 10px);
+    flex-basis: calc(100% / 3 - 20px / 3);
 }
 
 .card {
@@ -146,9 +149,7 @@ header {
     box-shadow: 0 0 10px gray;
 }
 
-.box-link,
-.box-logo,
-.box-user {
+nav>* {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -168,15 +169,16 @@ header {
 
 /** main */
 
-.layout {
-    position: absolute;
-    top: 0;
-    right: 0;
+.secondary-pic {
     display: none;
 }
 
-.col:hover .layout {
+.col:hover .secondary-pic {
     display: block;
+}
+
+.col:hover .primary-pic {
+    display: none;
 }
 
 .prefe:hover {
